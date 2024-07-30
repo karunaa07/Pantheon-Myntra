@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Selector App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <div id="imageSelectionScreen" class="screen">
+      <div id="imageGrid"></div>
+    </div>
+    <div id="recommendationScreen" class="screen hidden">
+      <div id="clothGrid"></div>
+      <p>We hope these outfits make your day brighter!</p>
+      <button id="restartButton">Restart</button>
+    </div>
+    <div id="clothDetailScreen" class="screen hidden">
+      <div id="clothDetail" class="cloth-detail"></div>
+        <div id="clothInfo">
+            <h2 id="clothName">Cloth Name</h2>
+            <p id="clothPrice">Price: $0.00</p>
+            <p id="clothColor">Color: N/A</p>
+            <label for="clothSizes">Sizes:</label>
+            <select id="clothSizes">
+                <option value="S">Small</option>
+                <option value="M">Medium</option>
+                <option value="L">Large</option>
+            </select>
+            <p id="clothCompany">Company: N/A</p>
+            <div id="clothReviews">Reviews: N/A</div>
+            <button id="backButton">Back</button>
+      <button id="tryOnButton">Virtual Try-On</button>
+      <button id="purchaseButton">Purchase</button>
+      <a href="review.html" class="button">Leave a review</a>
+        
+        </div>
+    </div>
+    
+    </div>
+  </div>
+  
+  <script src="page1.js"></script>
+</body>
+</html>

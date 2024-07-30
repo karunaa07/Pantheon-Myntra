@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Popup Widget</title>
+    <link rel="stylesheet" href="review.css">
+</head>
+<body>
+    <button id="open-popup-btn">Leave a Review</button>
+
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>Leave a Review</h2>
+
+            <div class="rating-section">
+                <h3>Rate your experience:</h3>
+                <div class="emojis">
+                    <span class="emoji">😡</span>
+                    <span class="emoji">😟</span>
+                    <span class="emoji">😐</span>
+                    <span class="emoji">😊</span>
+                    <span class="emoji">😍</span>
+                </div>
+            </div>
+
+            <div class="color-section">
+                <h3>Choose a color:</h3>
+                <div class="colors">
+                    <span class="color" style="background-color: red;"></span>
+                    <span class="color" style="background-color: blue;"></span>
+                    <span class="color" style="background-color: green;"></span>
+                    <span class="color" style="background-color: yellow;"></span>
+                    <span class="color" style="background-color: purple;"></span>
+                </div>
+            </div>
+
+            <div class="fabric-section">
+                <h3>Preferred fabric:</h3>
+                <select id="fabric-select">
+                    <option value="silk">Silk</option>
+                    <option value="cotton">Cotton</option>
+                    <option value="linen">Linen</option>
+                    <option value="wool">Wool</option>
+                    <option value="denim">Denim</option>
+                    <option value="polyester">Polyester</option>
+                </select>
+            </div>
+
+            <button id="submit-review">Submit</button>
+        </div>
+    </div>
+
+    <script src="review.js"></script>
+</body>
+</html>
